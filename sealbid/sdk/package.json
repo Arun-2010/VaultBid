@@ -1,0 +1,40 @@
+{
+  "name": "@sealbid/sdk",
+  "version": "0.1.0",
+  "description": "SealBid SDK - MEV-proof auction system on Solana",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "solana",
+    "anchor",
+    "auction",
+    "mev",
+    "blockchain",
+    "sdk"
+  ],
+  "author": "SealBid Team",
+  "license": "MIT",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.3.8",
+    "@noble/hashes": "^1.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "typescript": "^5.1.6",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
